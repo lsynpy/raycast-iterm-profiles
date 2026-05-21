@@ -1,5 +1,5 @@
 import { execFileSync } from "child_process";
-import { runAppleScript } from "@raycast/utils";
+import { runAppleScript, getAvatarIcon } from "@raycast/utils";
 import { Action, ActionPanel, Icon, List, closeMainWindow, popToRoot, showToast, Toast } from "@raycast/api";
 import { useEffect, useState } from "react";
 
@@ -79,7 +79,7 @@ export default function Command() {
       {profiles.map((profile) => (
         <List.Item
           key={profile.guid}
-          icon={Icon.Terminal}
+          icon={getAvatarIcon(profile.name)}
           title={profile.name}
           actions={
             <ActionPanel>
