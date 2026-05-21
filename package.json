@@ -26,14 +26,14 @@
     "@raycast/utils": "^1.18.0"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^2.1.1",
     "@types/node": "^22.0.0",
     "@types/react": "^18.3.0",
     "eslint": "^10.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.5",
     "prettier": "^3.8.3",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.59.4"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
